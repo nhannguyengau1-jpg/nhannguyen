@@ -124,13 +124,14 @@
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
     <script>
-        // ====================== ĐÃ CHỈNH SẴN ======================
-        const username = "NhanNguyen";
-        const repo = "photo";                 // ← tên repo là "photo"
-        const totalPhotos = 30;
+        // ====================== ĐÃ SỬA ĐÚNG ======================
+        const username = "nhannguyengau1-jpg";
+        const repo = "nhannguyen";
+        const totalPhotos = 20;
         // ==========================================================
 
-        const baseUrl = `https://raw.githubusercontent.com/${username}/${repo}/main/images/`;
+        // Ảnh nằm ngay thư mục gốc (không có /images/)
+        const baseUrl = `https://raw.githubusercontent.com/${username}/${repo}/main/`;
         const gallery = document.getElementById('gallery');
 
         for (let i = 1; i <= totalPhotos; i++) {
