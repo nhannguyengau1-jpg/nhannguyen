@@ -1,513 +1,390 @@
 <!DOCTYPE html>
-<html lang="en" class="theme-custom">
+<html lang="vi">
 <head>
-    <!--/ @Meta Tag /-->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" content="#00FFFF">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <meta name="description" content="Hi my name is Thành Nhân / A freelance / web developer / vexer">
-    <meta name="author" content="Thành Nhân">
-    <meta name="keywords"
-        content="thanhnhan, thanhnhan, thanhnhan.site">
-    <meta name="robots" content="index, follow">
-    <meta property="og:type" content="website">
-    <link rel="shortcut icon" href="https://files.catbox.moe/8uc2c4.jpg?v=894" type="image/x-icon">
-    <meta property="og:title" content="Thành Nhân | My Website">
-    <meta property="og:url" content="//thanhnhan.site">
-    <meta property="og:image" content="./res/v5/img/bg3.webp">
-    <title>Thành Nhân | My Website</title>
-    <!--/ @StyleSheets /-->
-    <link rel="stylesheet" href="./res/v5/css/ws.theme.css">
-    <link rel="stylesheet" href="./res/v5/css/animation.css">
-    <link rel="stylesheet" href="./res/v5/css/index.css?v=290">
-    <link rel="stylesheet" href="./res/v5/css/style.css">
-    <link rel="stylesheet" href="./res/v5/css/custom-love.css">
-    <!--/ @Frameworks /-->
-    <link rel="stylesheet" href="./res/v5/libs/jbox@1.3.3/jBox.all.min.css">
-    <!--/ @CDN /-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//cdn.thanhdieu.com/dialog/wstoast/ws.toast.css?v=1">
-</head>
-<body class="BodyStyle">
-    <div class="td-lock-screen">
-        <section class="td-welcome">
-            <div class="medias">
-                <video class="item_video" autoplay loop muted playsinline>
-                    <source src="./res/v5/files/video/hutao.mp4" type="video/mp4">
-                </video>
-                <div class="date"></div>
-            </div>
-            <div class="infos">
-                <div class="logo-web-title">
-                    <img class="logo-ws" src="https://files.catbox.moe/52ypfh.jpg" alt="Thành Nhân">
-                    <span class="web-title">
-                        𝑻𝒉𝒂̀𝒏𝒉 𝑵𝒉𝒂̂𝒏
-                    </span>
-                </div>
-                <span class="web_desc"></span>
-                <div>
-                <i class="icon ni ni-arrow-down close-lockscreen"></i>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div class="pace pace-active">
-        <div class="pace-progress" data-progress-text="0%" data-progress="0"
-            style="transform: translate3d(0%, 0px, 0px);">
-            <div class="pace-progress-inner"></div>
-        </div>
-    </div>
-    <div id="loading-box">
-        <div class="loading-bg">
-            <img class="loading-img entered loading" src="https://files.catbox.moe/8uc2c4.jpg?v=784" data-ws-status="loading">
-            <div class="loading-image-dot"></div>
-            <div id="loading-percentage">0%</div>
-        </div>
-    </div>
-    <!--/ @End Loader /-->
-    <main id="td-main">
-        <nav id="nav" class="hide">
-            <div class="td-popup" id="share_card">
-                <div class="left">
-                    <div class="title">Chia Sẽ Đến Mọi Người</div>
-                    <span class="td_copy" title="Nhấn để sao chép">
-                        <i class="ri-file-copy-line"></i>&nbsp;https://thanhnhan.site?t=share
-                    </span>
-                    <div class="button mt-2">
-                        <span class="td-btn"
-                            onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href),'top');"
-                            style="color:#3C8AFF;font-size: 1.5rem; cursor: pointer;" type="submit">
-                            <i class="ri-facebook-circle-fill"></i>
-                        </span>
-                        <span class="td-btn"
-                            onclick="window.open('https://www.messenger.com/t/' + encodeURIComponent('wusthanhdieu'),'top');"
-                            style="color:#00A0DC;font-size: 1.5rem;" type="submit">
-                            <i class="ri-messenger-fill"></i>
-                        </span>
-                        <span class="td-btn"
-                            onclick="window.open('https://t.me/share/url?url=' + encodeURIComponent(window.location.href),'top');"
-                            style="color:#03A5F0;font-size: 1.5rem;" type="submit">
-                            <i class="ri-telegram-line"></i>
-                        </span>
-                    </div>
-                </div>
-                <div class="right">
-                    <div style="color:#009d0a;padding: 0.5rem;">
-                        <i class="ri-qr-code-line"></i>&ensp;Quét Mã
-                    </div>
-                    <img class="avatar-nav"
-                        src="https://chart.googleapis.com/chart?chs=96x96&cht=qr&chl=https%3A%2F%2Fthanhnhan.site&choe=UTF-8"
-                        alt="Qr-code">
-                </div>
-            </div>
-        </nav>
-        <header id="header">
-            <h2>
-                <a href="#" class="site-icon">THANHNHAN | HOME</a>
-            </h2>
-            <div class="site-buttons">
-                <button class="site-button mode-loveday">
-                    <i class="ri-heart-2-line"></i>
-                </button>
-                <!-- <button class="site-button full-screen">
-                    <i class="ri-fullscreen-line"></i>
-                </button> -->
-                <button class="site-button change-skin">
-                    <em class="theme-icon ni ni-sun"></em>
-                    <button class="site-button setting-site">
-                        <i class="ri-share-forward-line"></i>
-                    </button>
-            </div>
-        </header>
-        <section class="td-content">
-            <div class="about-me">
-                <div class="info-left">
-                    <span class="tag">🤖️ Người đâm mê công nghệ số</span>
-                    <span class="tag">🔍 Chia sẻ và giúp đỡ nhiệt tình</span>
-                    <span class="tag">💻 Chuyên gia tư vấn tình cảm</span>
-                </div>
-                <div class="avatar">
-                    <img class="avatar-img" src="https://files.catbox.moe/ll1vw5.jpg?v=753" alt="Thành Nhân">
-                    <img class="crown" src="./res/v5/img/crown/mong-vuot-rong.png">
-                    <!-- <img class="crown2" src="./res/v5/img/crown/vip-crown.png"> -->
-                </div>
-                <div class="info-right">
-                    <span class="tag">Thích làm thần tượng facebook 🥳</span>
-                    <span class="tag">Ăn, ngủ, học hỏi và chơi game 🎮</span>
-                    <span class="tag">Kẻ khờ dại tin vào tình yêu ✨</span>
-                </div>
-            </div>
-            <div class="padding" style="height:2em;"></div>
-            <h2 class="HoVaTen__">
-                <span id="userName" data-userName='["Hello Everybody","My name is Thành Nhân.","I really like website design 🍭"]'></span>
-            </h2>
-            <div class="about-me-2">
-                <button class="trigger">👉 Tìm hiểu tôi 😶‍🌫️</button>
-                <button class="trigger">🤖️ Người đâm mê công nghệ số</button>
-                <button class="trigger">🔍 Chia sẻ và giúp đỡ nhiệt tình</button>
-                <button class="trigger">💻 Chuyên gia tư vấn tình cảm</button>
-                <button class="trigger">Thích làm thần tượng facebook 🥳</button>
-                <button class="trigger">Ăn, ngủ, học hỏi và chơi game 🎮</button>
-                <button class="trigger">Kẻ khờ dại tin vào tình yêu ✨</button>
-            </div>
-            <div class="padding" style="height:1em;"></div>
-            <section id="hr-mod">
-                                <a class="link-item facebook" data-href="https://www.facebook.com/LyTr.Hao">
-                    <div class="icon" style="background-image: url(./res/v5/img/social/facebook.webp)"></div>
-                </a>
-                                <a class="link-item instagram" data-href="https://www.instagram.com/lytr.hao">
-                    <div class="icon" style="background-image: url(./res/v5/img/social/instagram.webp)"></div>
-                </a>
-                                <a class="link-item tiktok" data-href="https://www.tiktok.com/@leetrhao963">
-                    <div class="icon" style="background-image: url(./res/v5/img/social/tiktok.webp)"></div>
-                </a>
-                                <a class="link-item telegram" data-href="https://t.me/htrlee963">
-                    <div class="icon" style="background-image: url(./res/v5/img/social/telegram.webp)"></div>
-                </a>
-                            </section>
-        </section>
-        <!-- <div class="website-container">
-        </div> -->
-        <!-- <div id="hr-mod">
-      <h2 class="td-title"><u>- Language Skill -</u></h2>
-      </div> -->
-        </div>
-        </div>
-    </main>
-    <main id="td-lovedays">
-    <div class="padding" style="height:4em;"></div>
-        <div class="love-time1 mt-5">
-            <div class="hide" data-ngayyeu="27/03/2019"></div>
-            <span class="love-time1-item" id="day">00</span> Ngày <span class="love-time1-item" id="hours">00</span>
-            Giờ <span class="love-time1-item" id="minute">00</span> Phút <span class="love-time1-item"
-                id="seconds">00</span> Giây
-        </div>
-        <div class="bg-wrap central mt-5">
-            <div class="bg-img">
-                <div class="middle animated">
-                    <div class="img-male">
-                        <img src="./res/v5/img/male.jpeg"
-                            alt="Thành Nhân">
-                        <img class="crown-love" src="./res/v5/img/crown/khung-4.png">
-                        <span>Thành Nhân</span>
-                    </div>
-                    <div class="heart"></div>
-                    <div class="img-female">
-                        <img src="./res/v5/img/female.jpeg"
-                            alt="Minh Tâm">
-                        <img class="crown-love" src="./res/v5/img/crown/khung-4.png">
-                        <span>Minh Tâm</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <!--/ @Setting ThanhDieuV5 /-->
-    <ul class="nk-sticky-toolbar">
-        <li class="demo-settings">
-            <a class="toggle tipinfo" data-target="SettingPanel">
-                <svg class="icon-spin" viewBox="0 0 30 30" id="Layer_1" version="1.1" xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <path class="st2"
-                            d="M26.6,12.9l-2.9-0.3c-0.2-0.7-0.5-1.4-0.8-2l1.8-2.3c0.2-0.2,0.1-0.5,0-0.7l-2.2-2.2c-0.2-0.2-0.5-0.2-0.7,0 l-2.3,1.8c-0.6-0.4-1.3-0.6-2-0.8l-0.3-2.9C17,3.2,16.8,3,16.6,3h-3.1c-0.3,0-0.5,0.2-0.5,0.4l-0.3,2.9c-0.7,0.2-1.4,0.5-2,0.8 L8.3,5.4c-0.2-0.2-0.5-0.1-0.7,0L5.4,7.6c-0.2,0.2-0.2,0.5,0,0.7l1.8,2.3c-0.4,0.6-0.6,1.3-0.8,2l-2.9,0.3C3.2,13,3,13.2,3,13.4v3.1 c0,0.3,0.2,0.5,0.4,0.5l2.9,0.3c0.2,0.7,0.5,1.4,0.8,2l-1.8,2.3c-0.2,0.2-0.1,0.5,0,0.7l2.2,2.2c0.2,0.2,0.5,0.2,0.7,0l2.3-1.8 c0.6,0.4,1.3,0.6,2,0.8l0.3,2.9c0,0.3,0.2,0.4,0.5,0.4h3.1c0.3,0,0.5-0.2,0.5-0.4l0.3-2.9c0.7-0.2,1.4-0.5,2-0.8l2.3,1.8 c0.2,0.2,0.5,0.1,0.7,0l2.2-2.2c0.2-0.2,0.2-0.5,0-0.7l-1.8-2.3c0.4-0.6,0.6-1.3,0.8-2l2.9-0.3c0.3,0,0.4-0.2,0.4-0.5v-3.1 C27,13.2,26.8,13,26.6,12.9z M15,19c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4s4,1.8,4,4C19,17.2,17.2,19,15,19z">
-                        </path>
-                    </g>
-                </svg>
-            </a>
-        </li>
-    </ul>
-    <div class="nk-demo-panel toggle-slide toggle-slide-right toggle-screen-any content-active" id="SettingPanel"
-        data-content="SettingPanel" data-toggle-overlay="true" data-toggle-body="true" data-toggle-screen="any">
-        <div class="nk-demo-head">
-            <h6 class="mb-0">Ws Settings</h6>
-            <a class="nk-demo-close toggle btn btn-icon btn-trigger revarse mr-n2 active" data-target="SettingPanel"
-                href="#">
-                <em class="icon ni ni-cross"></em>
-            </a>
-        </div>
-        <div class="nk-opt-panel" data-simplebar="init">
-            <div class="simplebar-wrapper">
-                <div class="simplebar-mask">
-                    <div class="simplebar-offset">
-                        <div class="simplebar-content-wrapper" tabindex="0" role="region"
-                            aria-label="scrollable content" style="height: auto; overflow: hidden scroll;">
-                            <div class="simplebar-content">
-                                <div class="nk-opt-set nk-opt-set-aside-apps change-bg">
-                                    <div class="nk-opt-set-title">Nền BackGround</div>
-                                    <div class="nk-opt-list col-4x">
-                                        <div class="nk-opt-item active" data-bg="./res/v5/img/bg.gif">
-                                            <span class="nk-opt-item-bg">
-                                                <img src="./res/v5/img/bg.gif">
-                                            </span>
-                                            <span class="nk-opt-item-name">Default</span>
-                                        </div>
-                                        <div class="nk-opt-item" data-bg="./res/v5/img/anime-wall.jpg">
-                                            <span class="nk-opt-item-bg">
-                                                <img src="./res/v5/img/anime-wall.jpg">
-                                            </span>
-                                            <span class="nk-opt-item-name">Anime</span>
-                                        </div>
-                                        <div class="nk-opt-item" data-bg="./res/v5/img/bg3.webp">
-                                            <span class="nk-opt-item-bg">
-                                                <img src="./res/v5/img/bg3.webp">
-                                            </span>
-                                            <span class="nk-opt-item-name">Sosuke</span>
-                                        </div>
-                                        <div class="nk-opt-item"
-                                            data-bg="https://api.thanhdieu.com/random-background.php">
-                                            <span class="nk-opt-item-bg">
-                                                <img src="./res/v5/img/random.jpeg">
-                                            </span>
-                                            <span class="nk-opt-item-name">Random</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="nk-opt-set">
-                                <div class="nk-opt-set-title">Danh Sách Nhạc</div>
-                                <br />
-                                <div class="nk-opt-list">
-                                    <ul class="music_menu_list">
-                                                                                <li url="https://files.catbox.moe/4bjjfg.mp3">
-                                            <span class="name">
-                                                <img class="singer-avatar ls-is-cached" src="https://i.ibb.co/Pt4ZJJd/that-girl-1545280005.jpg">
-                                                <span class="title">
-                                                    <font style="vertical-align: inherit;">
-                                                        <font style="vertical-align: inherit;">That Girl                                                        </font>
-                                                    </font>
-                                                </span>
-                                            </span>
-                                            <span class="author">
-                                                <font style="vertical-align: inherit;">
-                                                    <font style="vertical-align: inherit;">Olly Murs</font>
-                                                </font>
-                                            </span>
-                                        </li>
-                                                                                <li url="https://files.catbox.moe/m8b4hr.mp3">
-                                            <span class="name">
-                                                <img class="singer-avatar ls-is-cached" src="https://i.imgur.com/e28b0dD.png">
-                                                <span class="title">
-                                                    <font style="vertical-align: inherit;">
-                                                        <font style="vertical-align: inherit;">Thiên Lý Ơi                                                        </font>
-                                                    </font>
-                                                </span>
-                                            </span>
-                                            <span class="author">
-                                                <font style="vertical-align: inherit;">
-                                                    <font style="vertical-align: inherit;">Jack ( 5 Triệu )</font>
-                                                </font>
-                                            </span>
-                                        </li>
-                                                                                <li url="https://files.catbox.moe/yrpft2.mp3">
-                                            <span class="name">
-                                                <img class="singer-avatar ls-is-cached" src="https://i.imgur.com/DAaTklq.png">
-                                                <span class="title">
-                                                    <font style="vertical-align: inherit;">
-                                                        <font style="vertical-align: inherit;">Thuỷ Triều                                                        </font>
-                                                    </font>
-                                                </span>
-                                            </span>
-                                            <span class="author">
-                                                <font style="vertical-align: inherit;">
-                                                    <font style="vertical-align: inherit;">Quang Hùng MasterD</font>
-                                                </font>
-                                            </span>
-                                        </li>
-                                                                                <li url="https://files.catbox.moe/jlat9a.mp3">
-                                            <span class="name">
-                                                <img class="singer-avatar ls-is-cached" src="https://i.imgur.com/vp5Vsx5.png">
-                                                <span class="title">
-                                                    <font style="vertical-align: inherit;">
-                                                        <font style="vertical-align: inherit;">風立ちぬ ( Gió Nổi )                                                        </font>
-                                                    </font>
-                                                </span>
-                                            </span>
-                                            <span class="author">
-                                                <font style="vertical-align: inherit;">
-                                                    <font style="vertical-align: inherit;">周深</font>
-                                                </font>
-                                            </span>
-                                        </li>
-                                                                                <li url="https://files.catbox.moe/hkqk6x.mp3">
-                                            <span class="name">
-                                                <img class="singer-avatar ls-is-cached" src="https://i.imgur.com/GEOKT8b.png">
-                                                <span class="title">
-                                                    <font style="vertical-align: inherit;">
-                                                        <font style="vertical-align: inherit;">Chúng Ta Của Tương Lai                                                        </font>
-                                                    </font>
-                                                </span>
-                                            </span>
-                                            <span class="author">
-                                                <font style="vertical-align: inherit;">
-                                                    <font style="vertical-align: inherit;">Sơn Tùng M-TP</font>
-                                                </font>
-                                            </span>
-                                        </li>
-                                                                                <li url="https://files.catbox.moe/acg0vl.mp3">
-                                            <span class="name">
-                                                <img class="singer-avatar ls-is-cached" src="https://i.ibb.co/MDVY07s/619964de31327dbf8491d14d2c25533f.jpg">
-                                                <span class="title">
-                                                    <font style="vertical-align: inherit;">
-                                                        <font style="vertical-align: inherit;">Hoa Cỏ Lau                                                        </font>
-                                                    </font>
-                                                </span>
-                                            </span>
-                                            <span class="author">
-                                                <font style="vertical-align: inherit;">
-                                                    <font style="vertical-align: inherit;">Phong Max</font>
-                                                </font>
-                                            </span>
-                                        </li>
-                                                                                <li url="https://files.catbox.moe/s8opab.mp3">
-                                            <span class="name">
-                                                <img class="singer-avatar ls-is-cached" src="https://i.ibb.co/6R8V7S7/ed0741228ad36870e13624120474e50a.jpg">
-                                                <span class="title">
-                                                    <font style="vertical-align: inherit;">
-                                                        <font style="vertical-align: inherit;">Sau Lời Từ Khước                                                        </font>
-                                                    </font>
-                                                </span>
-                                            </span>
-                                            <span class="author">
-                                                <font style="vertical-align: inherit;">
-                                                    <font style="vertical-align: inherit;">Phan Mạnh Quỳnh</font>
-                                                </font>
-                                            </span>
-                                        </li>
-                                                                                <li url="https://files.catbox.moe/gvqgma.mp3">
-                                            <span class="name">
-                                                <img class="singer-avatar ls-is-cached" src="https://i.ibb.co/gvXHBqv/ab67616d0000b273ae85dfd27beee97a3a009f68.jpg">
-                                                <span class="title">
-                                                    <font style="vertical-align: inherit;">
-                                                        <font style="vertical-align: inherit;">Em Đã Xa Anh Remix                                                        </font>
-                                                    </font>
-                                                </span>
-                                            </span>
-                                            <span class="author">
-                                                <font style="vertical-align: inherit;">
-                                                    <font style="vertical-align: inherit;">Như Việt</font>
-                                                </font>
-                                            </span>
-                                        </li>
-                                                                                <li url="https://files.catbox.moe/dvjckq.mp3">
-                                            <span class="name">
-                                                <img class="singer-avatar ls-is-cached" src="https://i.ibb.co/VpFyXhS/ab44498b5b432879428719390baf1180-1490064587.jpg">
-                                                <span class="title">
-                                                    <font style="vertical-align: inherit;">
-                                                        <font style="vertical-align: inherit;">Anh Đã Quen Với Cô Đơn                                                        </font>
-                                                    </font>
-                                                </span>
-                                            </span>
-                                            <span class="author">
-                                                <font style="vertical-align: inherit;">
-                                                    <font style="vertical-align: inherit;">Soobin Hoàng Sơn</font>
-                                                </font>
-                                            </span>
-                                        </li>
-                                                                            </ul>
-                                </div>
-                            </div>
-                            <!-- <div class="nk-opt-set comming-soon" style="pointer-events:none;opacity: 0.5;">
-                                <div class="nk-opt-set-title">Hiệu Ứng Effect</div>
-                                <div class="nk-opt-list col-3x">
-                                    <div class="nk-opt-item active" data-key="effect" data-update="tathieuung">
-                                    <div class="custom-control custom-control-sm custom-radio">
-                                            <input type="radio" id="tathieuung" disabled class="custom-control-input">
-                                            <label class="custom-control-label" for="tathieuung">Tắt Effect</label>
-                                        </div>
-                                    </div>
-                                    <div class="nk-opt-item" data-key="effect" data-update="laroi">
-                                        <div class="custom-control custom-control-sm custom-radio">
-                                            <input type="radio" id="laroi" disabled class="custom-control-input">
-                                            <label class="custom-control-label" for="laroi">Lá Rơi</label>
-                                        </div>
-                                    </div>
-                                    <div class="nk-opt-item" data-key="effect" data-update="tuyetroi">
-                                        <div class="custom-control custom-control-sm custom-radio">
-                                            <input type="radio" id="tuyetroi" disabled class="custom-control-input">
-                                            <label class="custom-control-label" for="tuyetroi">Hiện FPS</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <div class="nk-opt-set">
-                                <div class="nk-opt-set-title">Giao Diện Theme</div>
-                                <div class="nk-opt-list col-2x">
-                                    <div class="nk-opt-item active" data-key="mode" data-update="light-mode">
-                                        <span class="nk-opt-item-bg is-light">
-                                            <span class="theme-light"></span>
-                                        </span>
-                                        <span class="nk-opt-item-name">Màu Trắng</span>
-                                    </div>
-                                    <div class="nk-opt-item" data-key="mode" data-update="dark-mode">
-                                        <span class="nk-opt-item-bg">
-                                            <span class="theme-dark"></span>
-                                        </span>
-                                        <span class="nk-opt-item-name">Màu Tối</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="nk-opt-set">
-                                <div class="nk-opt-set-title">Chế Độ Destroy</div>
-                                <div class="nk-opt-list col-2x">
-                                    <div class="nk-opt-item active" data-mode="DisableDestroy">
-                                        <span class="nk-opt-item-bg">
-                                            <span class="bg-danger"></span>
-                                        </span>
-                                        <span class="nk-opt-item-name">Vô Hiệu Hoá</span>
-                                    </div>
-                                    <div class="nk-opt-item" data-mode="EnableDestroy">
-                                        <span class="nk-opt-item-bg">
-                                            <span class="bg-success"></span>
-                                        </span>
-                                        <span class="nk-opt-item-name">Kích Hoạt</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="simplebar-placeholder" style="width:auto;height:1050px;"></div>
-            </div>
-            <div class="simplebar-track simplebar-horizontal">
-                <div class="simplebar-scrollbar"></div>
-            </div>
-            <div class="simplebar-track simplebar-vertical">
-                <div class="simplebar-scrollbar"></div>
-            </div>
-        </div>
-    </div>
-    <div class="running-cat">
-        <img src="./res/v5/img/cat.webp" alt="Running Cat">
-    </div>
-    <span id="fps">
-        <font color="#640366">FPS: 60 </font>
-        <span style="color:#009e45">Bình Thường😂</span>
-    </span>
-    <footer id="footer">
-        <span>
-            <a href="//thanhnhan.site" target="_blank">&copy; Copyright&nbsp;Thành Nhân 2024</a>
-        </span>
-    </footer>
-    <div class="time-now" id="real-time">00:00:00</div>
-    <div id="Toast">Resources Code V4.0.2</div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhan Nguyen | Nhiếp Ảnh Gia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!--/ @Framework /-->
-    <script src="./res/v5/libs/jquery/jquery-3.6.0.min.js"></script>
-    <script src="./res/v5/libs/jquery.pjax/jquery.pjax.min.js"></script>
-    <script src="./res/v5/libs/jbox@1.3.3/jBox.all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"
-        data-pace-options='{"restartOnRequestAfter":false,"eventLag":false}'></script>
-    <!--/ @Index Resource /-->
-    <script src="./res/v5/js/index.js?v=582">
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            text-align: center;
+            padding: 80px 20px 50px;
+            background: linear-gradient(180deg, #141414 0%, #0a0a0a 100%);
+        }
+
+        header h1 {
+            font-size: 3.2rem;
+            font-weight: 300;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            color: #888;
+            font-size: 1.15rem;
+            letter-spacing: 3px;
+        }
+
+        /* ===== GALLERY ===== */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 24px;
+            padding: 40px 24px 80px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .photo-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            background: #1a1a1a;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+        }
+
+        .photo-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+
+        .photo-card:hover img {
+            transform: scale(1.08);
+        }
+
+        /* Bản quyền + ngày đăng ngay trên ảnh */
+        .copyright {
+            position: absolute;
+            bottom: 14px;
+            right: 14px;
+            background: rgba(0, 0, 0, 0.75);
+            color: #fff;
+            font-size: 0.78rem;
+            padding: 6px 12px;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+            backdrop-filter: blur(4px);
+            pointer-events: none;
+            white-space: nowrap;
+        }
+
+        .copyright span {
+            color: #ccc;
+            margin: 0 4px;
+        }
+
+        /* ===== LIGHTBOX ===== */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .lightbox.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90vw;
+            max-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .lightbox-img {
+            max-width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.8);
+            animation: zoomIn 0.3s ease;
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .lightbox-copyright {
+            margin-top: 16px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        /* Nút đóng */
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2.5rem;
+            color: #fff;
+            cursor: pointer;
+            background: none;
+            border: none;
+            transition: color 0.2s;
+            z-index: 10000;
+        }
+
+        .lightbox-close:hover {
+            color: #ff4444;
+        }
+
+        /* Nút prev / next */
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255,255,255,0.1);
+            border: none;
+            color: #fff;
+            font-size: 2.2rem;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-nav:hover {
+            background: rgba(255,255,255,0.25);
+        }
+
+        .lightbox-prev {
+            left: 20px;
+        }
+
+        .lightbox-next {
+            right: 20px;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: #111;
+            color: #666;
+            font-size: 0.95rem;
+            border-top: 1px solid #222;
+        }
+
+        footer a {
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.2rem;
+                letter-spacing: 4px;
+            }
+            .gallery {
+                grid-template-columns: 1fr;
+                padding: 30px 16px 60px;
+            }
+            .lightbox-nav {
+                width: 40px;
+                height: 40px;
+                font-size: 1.8rem;
+            }
+            .lightbox-prev { left: 10px; }
+            .lightbox-next { right: 10px; }
+            .lightbox-close {
+                top: 15px;
+                right: 20px;
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Nhan Nguyen</h1>
+        <p>Nhiếp Ảnh Gia</p>
+    </header>
+
+    <!-- GALLERY -->
+    <div class="gallery" id="gallery">
+
+        <!-- Ảnh 1 -->
+        <div class="photo-card" data-index="0">
+            <img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/photo1.jpg" 
+                 alt="Ảnh của Nhan Nguyen"
+                 onerror="this.src='https://picsum.photos/id/1015/800/600'">
+            <div class="copyright">© Nhan Nguyen <span>|</span> 17/01/2020</div>
+        </div>
+
+        <!-- Ảnh 2 -->
+        <div class="photo-card" data-index="1">
+            <img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/photo2.jpg" 
+                 alt="Ảnh của Nhan Nguyen"
+                 onerror="this.src='https://picsum.photos/id/1016/800/600'">
+            <div class="copyright">© Nhan Nguyen <span>|</span> 17/01/2020</div>
+        </div>
+
+        <!-- Ảnh 3 -->
+        <div class="photo-card" data-index="2">
+            <img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/photo3.jpg" 
+                 alt="Ảnh của Nhan Nguyen"
+                 onerror="this.src='https://picsum.photos/id/1018/800/600'">
+            <div class="copyright">© Nhan Nguyen <span>|</span> 17/01/2020</div>
+        </div>
+
+        <!-- Ảnh 4 -->
+        <div class="photo-card" data-index="3">
+            <img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/photo4.jpg" 
+                 alt="Ảnh của Nhan Nguyen"
+                 onerror="this.src='https://picsum.photos/id/1025/800/600'">
+            <div class="copyright">© Nhan Nguyen <span>|</span> 17/01/2020</div>
+        </div>
+
+        <!-- Ảnh 5 -->
+        <div class="photo-card" data-index="4">
+            <img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/photo5.jpg" 
+                 alt="Ảnh của Nhan Nguyen"
+                 onerror="this.src='https://picsum.photos/id/1035/800/600'">
+            <div class="copyright">© Nhan Nguyen <span>|</span> 17/01/2020</div>
+        </div>
+
+        <!-- Ảnh 6 -->
+        <div class="photo-card" data-index="5">
+            <img src="https://raw.githubusercontent.com/your-username/your-repo/main/images/photo6.jpg" 
+                 alt="Ảnh của Nhan Nguyen"
+                 onerror="this.src='https://picsum.photos/id/1043/800/600'">
+            <div class="copyright">© Nhan Nguyen <span>|</span> 17/01/2020</div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2020 Nhan Nguyen — All Rights Reserved</p>
+        <p style="margin-top: 8px; font-size: 0.85rem;">
+            Hosted on <a href="https://github.com" target="_blank">GitHub Pages</a>
+        </p>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev">‹</button>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next">›</button>
+        
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-img" id="lightbox-img">
+            <div class="lightbox-copyright">© Nhan Nguyen | 17/01/2020</div>
+        </div>
+    </div>
+
+    <script>
+        // Lấy tất cả ảnh trong gallery
+        const cards = document.querySelectorAll('.photo-card');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeBtn = document.getElementById('lightbox-close');
+        const prevBtn = document.getElementById('lightbox-prev');
+        const nextBtn = document.getElementById('lightbox-next');
+
+        let currentIndex = 0;
+        const images = Array.from(cards).map(card => card.querySelector('img').src);
+
+        // Mở lightbox
+        cards.forEach((card, index) => {
+            card.addEventListener('click', () => {
+                currentIndex = index;
+                openLightbox();
+            });
+        });
+
+        function openLightbox() {
+            lightboxImg.src = images[currentIndex];
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden'; // khóa scroll
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = ''; // mở lại scroll
+        }
+
+        // Đóng lightbox
+        closeBtn.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+
+        // Prev / Next
+        prevBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            lightboxImg.src = images[currentIndex];
+        });
+
+        nextBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentIndex = (currentIndex + 1) % images.length;
+            lightboxImg.src = images[currentIndex];
+        });
+
+        // Phím tắt
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') prevBtn.click();
+            if (e.key === 'ArrowRight') nextBtn.click();
+        });
     </script>
-    <!--/ @CDN /-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <script src="//cdn.thanhdieu.com/dialog/wstoast/ws.toast.js"></script>
-    <!--  -->
+
 </body>
 </html>
-<!-- Thank you so much 💝 -->
